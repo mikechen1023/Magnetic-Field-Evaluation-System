@@ -42,23 +42,22 @@ print(test_output.dtype)
 # print(test_output, sep="\n")
 draw_uncertainty(test_data_loc, test_output, filename)
 
-# high = 0
-# med = 0
-# low = 0
+high = 0
+med = 0
+low = 0
 
-# for logit in test_output:
-#     if logit >= 0.9:
-#         high += 1
-#     elif logit >=0.6 and logit < 0.9:
-#         med += 1
-#     else:
-#         low += 1
+for logit in test_output:
+    if logit >= 0.9:
+        high += 1
+    elif logit >=0.6 and logit < 0.9:
+        med += 1
+    else:
+        low += 1
 
-# print("\ntest data number:", len(test_output))
-# print("high: ",high)
-# print("med: ", med)
-# print("low: ", low)
+print("\ntest data number:", len(test_output))
+print("high: ",high)
+print("med: ", med)
+print("low: ", low)
 
 
-# if __name__ == '__main__':
     
