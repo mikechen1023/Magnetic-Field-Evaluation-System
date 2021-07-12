@@ -9,3 +9,8 @@ Build a gan network, so that we can use generator to generate trajectory magneti
 Because of NDA, there is no dataset in this repository.
 ```
 
+## Files : 
+- gan .py : Build the gan model
+- route .py : Calculate CDF
+- analysis .py : Show error and uncertainty with picture
+- test_gan .py : Test the model
